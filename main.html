@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Havblink</title>
-    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -134,108 +133,9 @@
             </div>
         </nav>
     </header>
-    <!--Video hero - div fordi det er en video-->
-    <main>
-        <div id="hero">
-            <video autoplay muted loop>
-                <source src="videoer/hero.mp4" type="video/mp4">
-            </video>
-            <img class="overskrift" src="Billeder/logoskrift.png" alt="Overskrift">
-            <h4>Vingård</h4>
-            <p><a href="#">LÆS MERE</a></p>
-        </div>
-        <!--Sektion med tekst og billeder placeret på tekst-containeren-->
-        <div class="hands-container">
-            <h1>Velkommen til Havblink</h1>
-            <p>Havblink er blandt Danmarks største bæredygtige<br> 
-                vingårde med den smukke og meget unikke<br>
-                beliggenhed i Skårup på Sydfyn.<br><br>
-                Vi dyrker Solaris-druen med fokus på høj kvalitet og har<br>
-                gennem mange års erfaring og nysgerrige<br>
-                eksperimenter været med til at løfte dansk hvidvin til<br> 
-                en helt ny skala end før set.</p>
-            <img class="hand1" src="billeder/hand1.svg" alt="hand1">
-            <img class="hand2" src="billeder/hand2.svg" alt="hand2">
-            <img class="hand3" src="billeder/hand3.svg" alt="hand3">
-        </div>
-        <!--Sektion da det kun er tekst-->
-        <section class="tekst-container">
-            <h4>Vores vin</h4>
-            <a href="#">Se alle</a>
-        </section>
-        <!--div med billeder og tekst-->
-        <div class="vin-wrapper">
-            <img class="pilvenstre" src="billeder/pilvenstre.svg" alt="pilvenstre">
-            <div class="vin-container">
-                <div class="voresvin">
-                <a href="#"><img src="billeder/almindelig.jpg" alt="vin1"></a>
-                    <div class="produkttekst">
-                        <a href="#">Hvidvin <br> på solaris drue</a>
-                        <h4>349,-</h4>
-                    </div>
-            </div>
-            <div class="voresvin">
-                <a href="#"><img src="billeder/dessert.jpg" alt="vin2"></a>
-                    <div class="produkttekst">
-                        <a href="#">Dessertvin <br> på solaris drue</a>
-                        <h4>249,-</h4>
-                    </div>
-            </div>
-            <div class="voresvin">
-                <a href="#"><img src="billeder/mouserende.png" alt="vin3"></a>
-                    <div class="produkttekst">
-                        <a href="#">Mousserende <br> på solaris drue</a>
-                        <h4>299,-</h4>
-                    </div>
-            </div>
-            <!--scroll til højre-->
-            <div class="voresvin">
-                <a href="#"><img src="billeder/almindelig.jpg" alt="vin4"></a>
-                    <div class="produkttekst">
-                        <a href="#">Halvtør hvidvin <br> på solaris drue</a>
-                        <h4>399,-</h4>
-                    </div>
-            </div>
-            <div class="voresvin">
-                <a href="#"><img src="billeder/orangevin.jpg" alt="vin4"></a>
-                    <div class="produkttekst">
-                        <a href="#">Orangevin <br> på solaris drue</a>
-                        <h4>279,-</h4>
-                    </div>
-            </div>
-            <div class="voresvin">
-                <a href="#"><img src="billeder/sodvin.jpg" alt="vin6"></a>
-                    <div class="produkttekst">
-                        <a href="#">Halvsød hvidvin <br> på solaris drue</a>
-                        <h4>229,-</h4>
-                    </div>
-            </div>
-            <img class="pilhojre" src="billeder/pilhojre.svg" alt="pilhojre">
-        </div>
-        <div class="chatbot">
-            <h4>Brug for eksperthjælp?</h4>
-            <a href="#"><img src="Billeder/chat.svg" alt="chatbot"></a>
-        </div>
-    </main>
 
-    <!-- Java script til scrollbar med vinprodukter-->
-       <script>
-        const container = document.querySelector('.vin-container');
-        const pilVenstre = document.querySelector('.pilvenstre');
-        const pilHojre = document.querySelector('.pilhojre');
 
-        // Find bredden på ét billede inkl. margin
-        const scrollStep = 300 + 70; // f.eks. billede = 300px, margin/gap = 80px
-
-        pilHojre.addEventListener('click', () => {
-            container.scrollBy({ left: scrollStep, behavior: 'smooth' });
-        });
-
-        pilVenstre.addEventListener('click', () => {
-            container.scrollBy({ left: -scrollStep, behavior: 'smooth' });
-        });
-</script>
-    <footer>
+      <footer>
         <div class="halvcirkel"></div>
         <!--footer laptop-->
         <div class="footer-info">
