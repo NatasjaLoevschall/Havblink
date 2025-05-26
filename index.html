@@ -6,8 +6,7 @@
     <title>Havblink</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="Billeder/favicon-16x16.png" type="image/png">
     <!--font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,13 +20,13 @@
             <label for="menu-toggle" class="menu-icon">&#9776;</label>
 
             <ul class="menu">
-                <li><a href="#">Vores vin</a></li>
+                <li><a href="voresvin.html">Vores vin</a></li>
                 <li>
                     <input type="checkbox" id="besog-toggle" />
                     <label for="besog-toggle" class="dropdown-label">Besøg vingården</label>
                     <ul class="submenu">
                         <li><a href="#">Rundvisning</a></li>
-                        <li><a href="#">Vinsmagning</a></li>
+                        <li><a href="vinsmagning.html">Vinsmagning</a></li>
                         <li><a href="#">Gårdbutik</a></li>
                     </ul>
                 </li>
@@ -36,7 +35,7 @@
                     <input type="checkbox" id="vineriet-toggle" />
                     <label for="vineriet-toggle" class="dropdown-label">Vineriet</label>
                     <ul class="submenu">
-                        <li><a href="#">Historien bag</a></li>
+                        <li><a href="historien.html">Historien bag</a></li>
                         <li><a href="#">Vinfremstilling</a></li>
                         <li><a href="#">Bæredygtighed</a></li>
                     </ul>
@@ -59,7 +58,7 @@
             <!--venstre menu-->
             <div class="menu-left">
                 <ul>
-                    <li><a href="#">Vores vin</a></li>
+                    <li><a href="voresvin.html">Vores vin</a></li>
                     <!--dropdown menu-->
                      <li class="dropdown">
                         <a>Besøg vingården</a>
@@ -73,7 +72,9 @@
                             <div class="dropdown-box">
                                 <h4>Vinsmagning</h4>
                                 <div class="image-container">
-                                    <img src="billeder/kate.jpg" alt="Vinfremstilling">
+                                     <a href="vinsmagning.html">
+                                        <img src="billeder/kate.jpg" alt="Vinfremstilling">
+                                    </a>
                                 </div>
                             </div>
                             <div class="dropdown-box">
@@ -99,9 +100,11 @@
                         <a>Vineriet</a>
                         <div class="dropdown-content">
                             <div class="dropdown-box">
-                                <h4>Historien bag</h4>
+                                <a href="historien.html">
+                                    <h4>Historien bag</h4>
+                                </a>    
                                 <div class="image-container">
-                                    <img src="billeder/bag.jpg" alt="Historien bag">
+                                    <a href="historien.html"><img src="billeder/bag.jpg" alt="Historien bag"></a>
                                 </div>
                             </div>
                             <div class="dropdown-box">
@@ -142,7 +145,7 @@
             </video>
             <img class="overskrift" src="Billeder/logoskrift.png" alt="Overskrift">
             <h4>Vingård</h4>
-            <p><a href="#">LÆS MERE</a></p>
+            <p><a href="historien.html">LÆS MERE</a></p>
         </div>
         <!--Sektion med tekst og billeder placeret på tekst-containeren-->
         <div class="hands-container">
@@ -161,7 +164,7 @@
         <!--Sektion da det kun er tekst-->
         <section class="tekst-container">
             <h4>Vores vin</h4>
-            <a href="#">Se alle</a>
+            <a href="voresvin.html">Se alle</a>
         </section>
         <!--div med billeder og tekst-->
         <div class="vin-wrapper">

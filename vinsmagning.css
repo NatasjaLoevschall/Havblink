@@ -1,0 +1,135 @@
+
+/*sektion med hænderne*/
+.hands-container{
+  margin-bottom: 20px;
+  margin-top: 90px;
+  position: relative;
+  height: 90vh;
+  width: 100%;
+  text-align: center;
+  color: #3C3C3C
+}
+.hands-container h1{
+  font-size: 2.5rem;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  margin-top: 130px;
+  position: relative;
+  display: inline-block;
+}
+/* streg under teksten */
+.hands-container h1::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color:  #3C3C3C;
+  bottom: -35px; /* afstand fra teksten */
+  width: 40px;   /* længden på stregen */
+  height: 2px; /* tykkelsen på stregen */
+  border-radius: 2px;
+}
+.hands-container p{
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin-top: 60px;
+  line-height: 1.5;
+}
+/* hænderne er position absolute, så de kan placeres præcist i forhold til baggrunden*/
+.hand1{
+  height: 250px;
+  position: absolute;
+  top: 42%;
+  left: 18%;
+}
+.hand2{
+  height: 280px;
+  position: absolute;
+  top: 36%;
+  left: 80%;
+}
+.hand3{
+  height: 400px;
+  position: absolute;
+  top: 20%;
+  left: 5%;
+}
+.tekst-container2{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 4rem; /* lidt luft fra siderne */
+  align-items: center; 
+  color:  #3C3C3C;
+  border-bottom: 1px solid  #3C3C3C; /* streg under teksten */
+  border-top: 1px solid  #3C3C3C; /* streg over teksten */
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.tekst-container2 h4{
+  font-size: 1.6rem;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+}
+/*fifty fifty med billede og tilhørende beskrivelse*/
+.fiftyfifty {
+  height: 500px; /* fast højde */
+  background-color: #ffffffba;
+  display: flex;
+  align-items: center; /* centrerer indholdet vertikalt */
+  margin-bottom: 80px;
+}
+.indhold {
+  display: flex;
+  width: 100%;
+}
+.produkt {
+  width: 50%;
+  height: 500px; 
+}
+.produkt img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* bevarer proportioner og dækker hele boksen uden stræk */
+}
+.tekst {
+  width: 50%;
+  height: 100%; /* tilpasser sig hele kassens højde */
+  margin-top: 50px;
+  position: relative;
+  margin-left: 70px ;
+}
+.tekst h1 {
+  margin-top: 35px;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  color: #3C3C3C
+} 
+.tekst p, li{
+  font-size: 0.9rem;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  color: #3C3C3C;
+  margin-bottom: 27px;
+}
+/*knap*/
+.pris{
+  margin-top: 40px;
+}
+.pris a{
+  text-decoration: none;
+  color: #3C3C3C;
+  font-weight: 400;
+  font-size: 1.4rem;
+  border: 1px solid #3C3C3C;
+  padding: 0.4rem 2rem;
+}
+.pris a:hover{
+  background-color: #3C3C3C;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+

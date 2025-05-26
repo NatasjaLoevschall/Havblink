@@ -95,7 +95,7 @@
 }
 /* hænderne er position absolute, så de kan placeres præcist i forhold til baggrunden*/
 .hand1{
-  height: 240px;
+  height: 250px;
   position: absolute;
   top: 42%;
   left: 18%;
@@ -112,37 +112,7 @@
   top: 20%;
   left: 5%;
 }
-/*Vores vin sektion - gøres til flexboks så teksten står ved siden af hinanden horisontalt*/
-.tekst-container{
-  display: flex;
-  justify-content: space-between;
-  padding: 0 7rem; /* lidt luft fra siderne */
-  align-items: center; 
-  color:  #3C3C3C;
-  border-bottom: 1px solid  #3C3C3C; /* streg under teksten */
-  border-top: 1px solid  #3C3C3C; /* streg over teksten */
-  margin-bottom: 67px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
- .tekst-container a{
-  text-decoration: none;
-  color: #3C3C3C;
-  padding-bottom: 6px;
-  font-weight: 500;
-  border-bottom: 1.3px solid  #3C3C3C;
-  font-size: 1rem;
-  letter-spacing: 1px;
-}
-.tekst-container a:hover{
-  font-weight: 500;
-  border-bottom: 1.5px solid #3C3C3C;
-}
-.tekst-container h4{
-  font-size: 1.6rem;
-  font-weight: 500;
-  letter-spacing: 1.5px;
-}
+
 /*Produktbillederne*/
 /*gøres til display grid med tre kolonner, så de står pænt ved siden af hinanden*/
 .vin-container{

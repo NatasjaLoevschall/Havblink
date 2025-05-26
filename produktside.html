@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Havblink</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="produktside.css">
+    <link rel="icon" href="Billeder/favicon-16x16.png" type="image/png">
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Darker+Grotesque:wght@300..900&family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Oxanium:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <!--mobil navigation-->
+        <nav class="mobilmenu">
+            <input type="checkbox" id="menu-toggle" />
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+            <ul class="menu">
+                <li><a href="voresvin.html">Vores vin</a></li>
+                <li>
+                    <input type="checkbox" id="besog-toggle" />
+                    <label for="besog-toggle" class="dropdown-label">Besøg vingården</label>
+                    <ul class="submenu">
+                        <li><a href="#">Rundvisning</a></li>
+                        <li><a href="vinsmagning.html">Vinsmagning</a></li>
+                        <li><a href="#">Gårdbutik</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <input type="checkbox" id="vineriet-toggle" />
+                    <label for="vineriet-toggle" class="dropdown-label">Vineriet</label>
+                    <ul class="submenu">
+                        <li><a href="historien.html">Historien bag</a></li>
+                        <li><a href="#">Vinfremstilling</a></li>
+                        <li><a href="#">Bæredygtighed</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Vin & mad</a></li>
+            </ul>
+            <div class="søg-wrapper">
+                 <input type="checkbox" id="toggle-søg">
+                 <label for="toggle-søg" class="søg-knap">
+                    <img src="Billeder/lup.svg" alt="Søg">
+                </label>
+
+                <div class="søg-felt">
+                    <input type="text" placeholder="Søg her...">
+                </div>
+            </div>
+        </nav>
+        <!--navigation laptop-->
+        <nav>
+            <!--venstre menu-->
+            <div class="menu-left">
+                <ul>
+                    <li><a href="voresvin.html">Vores vin</a></li>
+                    <!--dropdown menu-->
+                     <li class="dropdown">
+                        <a>Besøg vingården</a>
+                        <div class="dropdown-content">
+                            <div class="dropdown-box">
+                                <h4>Rundvisning</h4>
+                                <div class="image-container">
+                                    <img src="billeder/ove.jpg" alt="Historien bag">
+                                </div>
+                            </div>
+                            <div class="dropdown-box">
+                                <h4>Vinsmagning</h4>
+                                <div class="image-container">
+                                     <a href="vinsmagning.html">
+                                        <img src="billeder/kate.jpg" alt="Vinfremstilling">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="dropdown-box">
+                                <h4>Gårdbutik</h4>
+                                <div class="image-container">
+                                    <img src="billeder/besog.jpg" alt="Baeredygtighed">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!--logo-->
+            <div class="logo-container">
+                <div class="halvcirkeltop"><a href="index.html"><img src="Billeder/logoblå.svg" alt="logo"></a></div>
+            </div>
+        
+            <!--højre menu-->
+            <div class="menu-right">
+                <!--dropdown menu-->
+                <ul>
+                    <li class="dropdown">
+                        <a>Vineriet</a>
+                        <div class="dropdown-content">
+                            <div class="dropdown-box">
+                                <h4>Historien bag</h4>
+                                <div class="image-container">
+                                    <a href="historien.html">
+                                        <img src="billeder/bag.jpg" alt="Historien bag">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="dropdown-box">
+                                <h4>Vinfremstilling</h4>
+                                <div class="image-container">
+                                    <img src="billeder/frem.jpg" alt="Vinfremstilling">
+                                </div>
+                            </div>
+                            <div class="dropdown-box">
+                                <h4>Bæredygtighed</h4>
+                                <div class="image-container">
+                                    <img src="billeder/oko.jpg" alt="Baeredygtighed">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#">Vin & mad</a></li>
+                     <!--søgeikon-->
+                    <div class="sog-wrapper">
+                        <input type="checkbox" id="toggle-sog">
+                        <label for="toggle-sog" class="sog-knap">
+                            <img src="Billeder/lup.svg" alt="Sog">
+                        </label>
+
+                        <div class="sog-felt">
+                            <input type="text" placeholder="Søg her...">
+                        </div>
+                    </div>
+                  </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="tekst-container2">
+            <h4>Bestseller</h4>
+        </section>
+        <div id="fiftyfifty">
+            <div id="indhold">
+                <div id="produkt">
+                    <img src="billeder/almindelig.jpg" alt="Vinsmagningskit">
+                </div>
+                <div id="tekst">
+                    <h1>Tør hvidvin</h1>
+                    <p>En frisk og aromatisk tør hvidvin på Solaris –<br> 
+                        dyrket i dansk klima og præget af grønne<br> 
+                        æbler, citrus og nordisk lethed. Perfekt til <br>
+                        lette retter, fisk og som aperitif.</p>
+                <!--smagsprofiler-->
+                    <div class="smagsprofil">
+                        <div class="egenskab">
+                            <p>SYRE</p>
+                            <div class="bar">
+                                <div class="niveau" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                        <div class="egenskab">
+                            <p>FRUGTIGHED</p>
+                            <div class="bar">
+                                <div class="niveau" style="width: 70%;"></div>
+                            </div>
+                        </div>
+                        <div class="egenskab">
+                            <p>FYLDE</p>
+                            <div class="bar">
+                                <div class="niveau" style="width: 40%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="pris">
+                        <h2>349,-</h2>
+                        <a href="#">KØB HER</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tekst-container3">
+            <h4>Anmeldelser</h4>
+            <div class="hjerter2">
+                <img src="Billeder/hjerte.svg" alt="Hjerter">
+                <img src="Billeder/hjerte.svg" alt="Hjerter">
+                <img src="Billeder/hjerte.svg" alt="Hjerter">
+                <img src="Billeder/hjerte.svg" alt="Hjerter">
+                <img src="Billeder/hjertehul.svg" alt="Hjerter">
+            </div>
+        </div>
+        <!-- Anmeldelser -->
+         <div class="anmeldelser">
+            <div class="anmeldelse">
+                <img id="dot" src="billeder/dot.svg" alt="dot">
+                <p>Rigtig lækker vin - frisk og sprød med god syre.<br> Smager af sommer!<br> Passer perfekt til fisk og salater.</p>
+                <p class="navn">Thomas Larsen</p>
+                <div class="hjerter3">
+                    <img src="billeder/hjerte.svg" alt="Hjerte">
+                    <img src="billeder/hjerte.svg" alt="Hjerte">
+                    <img src="billeder/hjerte.svg" alt="Hjerte">
+                    <img src="billeder/hjerte.svg" alt="Hjerte">
+                    <img src="billeder/hjertehul.svg" alt="Hjerte tomt">
+                </div>
+            </div>
+            <div class="anmeldelse">
+                <img id="dot" src="billeder/dot.svg" alt="dot">
+                <p>Jeg drikker normalt ikke dansk vin, men den her overraskede mig virkelig. Frisk, let og nem at drikke – ikke for sød og ikke for sur.</p>
+                <p class="navn">Christina Hansen</p>
+                <div class="hjerter3">
+                    <img src="billeder/hjerte.svg" alt="Hjerte">
+                    <img src="billeder/hjerte.svg" alt="Hjerte">
+                    <img src="billeder/hjerte.svg" alt="Hjerte">
+                    <img src="billeder/hjerte.svg" alt="Hjerte">
+                    <img src="billeder/hjerte.svg" alt="Hjerte tomt">
+                </div>
+            </div>
+            <div class="anmeldelse">
+                <img id="dot" src="billeder/dot.svg" alt="dot">
+                <p>Imponerende, hvad dansk vin kan! Frisk, sprød og fuld af karakter. Kan dog stadig ikke helt sammenlignes med de udenlandske.</p>
+                <p class="navn">Peter Mortensen</p>
+                <div class="hjerter3">
+                    <img src="billeder/hjerte.svg" alt="Hjerte">
+                    <img src="billeder/hjerte.svg" alt="Hjerte">
+                    <img src="billeder/hjerte.svg" alt="Hjerte">
+                    <img src="billeder/hjertehul.svg" alt="Hjerte">
+                    <img src="billeder/hjertehul.svg" alt="Hjerte tomt">
+                </div>
+            </div>
+        </div>
+        <div id="læsmere">
+            <a href="#">LÆS MERE</a>
+        </div>
+        <div class="chatbot">
+            <h4>Brug for eksperthjælp?</h4>
+            <a href="#"><img src="Billeder/chat.svg" alt="chatbot"></a>
+        </div>
+      </main>
+      <footer>
+        <div class="halvcirkel"></div>
+        <!--footer laptop-->
+        <div class="footer-info">
+            <div class="footer-logo">
+                <img src="Billeder/logoblå.svg" alt="logo">
+            </div>
+            <section class="footer-tekst">
+                <h4 class="telefon">NYHEDSBREV</h4><br>
+                <ul>
+                    <li><p class="telefon">Tilmeld dig vores nyhedbrev<br>og få gode tilbud på vores<br> udvalg af dansk hvidvin</p></li><br>
+                    <li><input class="telefon" type="email" placeholder="Skriv din email her" class="email-input" required></li>    
+                </ul>
+            </section>
+            <section class="footer-tekst">
+                <h4>INFORMATION</h4><br>
+                <ul>
+                    <li><a href="#">Tlf. 60 51 05 12</a></li><br>
+                    <li><a href="#">Havblink@gmail.com</a></li><br>
+                    <li><a href="#">Fynsgade 69, 5881 Skårup</a></li>
+                </ul>
+            </section>
+            <section class="footer-tekst">
+                <h4>GÅRDBUTIK</h4><br>
+                <ul>
+                    <li><p>Åbningstider</p></li><br>
+                    <li><p>Alle hverdage<br>Kl. 11:00-17:00</p></li>    
+                </ul>
+            </section>
+        </div>
+        <div class="ikoner">
+            <div class="socialemedier">
+                <a href="https://www.facebook.com/login.php/"><img src="Billeder/facebook.svg" alt="facebook"></a>
+                <p>Facebook</p>
+            </div>
+             <div class="socialemedier">
+                <a href="https://www.findsmiley.dk/71055"><img src="Billeder/smiley.svg" alt="smiley"></a>
+                <p>Kontrolrapport</p>
+            </div>
+             <div class="socialemedier">
+                <a href="https://www.instagram.com/lindely.vingaard/"><img src="Billeder/insta.svg" alt="instagram"></a>
+                <p>Instagram</p>
+            </div>
+        </div>
+        <section class="rettigheder">
+            <p>© 2025 Havblink vingård ApS. Alle rettigheder forbeholdes. </p>
+        </section>
+    </footer>
+</body>
+</html>

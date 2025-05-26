@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Havblink</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="historien.css">
+    <link rel="icon" href="Billeder/favicon-16x16.png" type="image/png">
+
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Darker+Grotesque:wght@300..900&family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Oxanium:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <!--mobil navigation-->
+        <nav class="mobilmenu">
+            <input type="checkbox" id="menu-toggle" />
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+            <ul class="menu">
+                <li><a href="voresvin.html">Vores vin</a></li>
+                <li>
+                    <input type="checkbox" id="besog-toggle" />
+                    <label for="besog-toggle" class="dropdown-label">Besøg vingården</label>
+                    <ul class="submenu">
+                        <li><a href="#">Rundvisning</a></li>
+                        <li><a href="vinsmagning.html">Vinsmagning</a></li>
+                        <li><a href="#">Gårdbutik</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <input type="checkbox" id="vineriet-toggle" />
+                    <label for="vineriet-toggle" class="dropdown-label">Vineriet</label>
+                    <ul class="submenu">
+                        <li><a href="historien.html">Historien bag</a></li>
+                        <li><a href="#">Vinfremstilling</a></li>
+                        <li><a href="#">Bæredygtighed</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Vin & mad</a></li>
+            </ul>
+            <div class="søg-wrapper">
+                 <input type="checkbox" id="toggle-søg">
+                 <label for="toggle-søg" class="søg-knap">
+                    <img src="Billeder/lup.svg" alt="Søg">
+                </label>
+
+                <div class="søg-felt">
+                    <input type="text" placeholder="Søg her...">
+                </div>
+            </div>
+        </nav>
+        <!--navigation laptop-->
+        <nav>
+            <!--venstre menu-->
+            <div class="menu-left">
+                <ul>
+                    <li><a href="voresvin.html">Vores vin</a></li>
+                    <!--dropdown menu-->
+                     <li class="dropdown">
+                        <a>Besøg vingården</a>
+                        <div class="dropdown-content">
+                            <div class="dropdown-box">
+                                <h4>Rundvisning</h4>
+                                <div class="image-container">
+                                    <img src="billeder/ove.jpg" alt="Historien bag">
+                                </div>
+                            </div>
+                            <div class="dropdown-box">
+                                <h4>Vinsmagning</h4>
+                                <div class="image-container">
+                                    <a href="vinsmagning.html">
+                                        <img src="billeder/kate.jpg" alt="Vinfremstilling">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="dropdown-box">
+                                <h4>Gårdbutik</h4>
+                                <div class="image-container">
+                                    <img src="billeder/besog.jpg" alt="Baeredygtighed">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!--logo-->
+            <div class="logo-container">
+                <div class="halvcirkeltop"><a href="index.html"><img src="Billeder/logoblå.svg" alt="logo"></a></div>
+            </div>
+        
+            <!--højre menu-->
+            <div class="menu-right">
+                <!--dropdown menu-->
+                <ul>
+                    <li class="dropdown">
+                        <a>Vineriet</a>
+                        <div class="dropdown-content">
+                            <div class="dropdown-box">
+                                <h4>Historien bag</h4>
+                                <div class="image-container">
+                                    <a href="historien.html">
+                                        <img src="billeder/historie.jpg" alt="Historien bag">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="dropdown-box">
+                                <h4>Vinfremstilling</h4>
+                                <div class="image-container">
+                                    <img src="billeder/frem.jpg" alt="Vinfremstilling">
+                                </div>
+                            </div>
+                            <div class="dropdown-box">
+                                <h4>Bæredygtighed</h4>
+                                <div class="image-container">
+                                    <img src="billeder/oko.jpg" alt="Baeredygtighed">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#">Vin & mad</a></li>
+                     <!--søgeikon-->
+                    <div class="sog-wrapper">
+                        <input type="checkbox" id="toggle-sog">
+                        <label for="toggle-sog" class="sog-knap">
+                            <img src="Billeder/lup.svg" alt="Sog">
+                        </label>
+
+                        <div class="sog-felt">
+                            <input type="text" placeholder="Søg her...">
+                        </div>
+                    </div>
+                  </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="banner">
+            <img src="Billeder/par.jpg" alt="Banner">
+            <a href="#scroll-target">
+                <div class="ned">
+                    <img src="Billeder/ned.svg" alt="Ned pil">
+                </div>
+            </a>
+            <div id="scroll-target" class="sektion"></div>
+        </div>
+        <div class="tekst">
+            <h1>Ove & Birgit</h1>
+            <p>Når du køber en vin ved Havblink, vil logoet være et symbol på<br>
+            den historie, som ligger bag vinen. Birgit og Ove, som er<br>
+            illustreret i et logo, er et gammelt ægtepar med en fælles<br>
+            kærlighed til naturen, det gode glas vin – og hinanden.<br><br>
+
+            Under corona plantede de deres første Solaris-stokke på en<br> 
+            sydvendt mark ved Skårup. Hvad der begyndte som et<br>
+            passioneret fritidsprojekt, voksede langsomt til en lille,<br> 
+            bæredygtig vingård. I dag laver de vin med nordisk karakter<br>
+            og stor personlighed – dyrket i dansk jord, med livserfaring i<br> 
+            hver drue.</p>
+            <img id="birgit" src="Billeder/birgit.svg" alt="Birgit">
+            <img id="ove" src="Billeder/ove.svg" alt="Ove">
+        </div>
+        <div id="video-container">
+             <video autoplay muted loop>
+                <source src="videoer/video.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="tekst2">
+            <h1>Dansk vin med sjæl</h1>
+            <p> Hos Birgit og Ove begynder alt i marken, hvor Solaris-<br>
+                druerne håndplukkes, når de har opnået den rette balance<br>
+                mellem syre og modenhed. Druerne presses nænsomt, og<br>
+                mosten får lov at gære langsomt ved lav temperatur for at<br>
+                bevare de fine, frugtige aromaer. <br><br>
+
+                Vinen lagres derefter på ståltank for at sikre en frisk og ren<br> 
+                smagsprofil – uden unødig indblanding. Det hele foregår i<br>
+                lille skala, med hænderne på hver detalje og sjælen med i<br> hver flaske.</p>
+            <img id="hand1" src="Billeder/hand1.svg" alt="hand1">
+            <img id="hand2" src="Billeder/hand2.svg" alt="hand2">
+        </div>
+        <div class="chatbot">
+            <h4>Brug for eksperthjælp?</h4>
+            <a href="#"><img src="Billeder/chat.svg" alt="chatbot"></a>
+        </div>
+    </main>
+      <footer>
+        <div class="halvcirkel"></div>
+        <!--footer laptop-->
+        <div class="footer-info">
+            <div class="footer-logo">
+                <img src="Billeder/logoblå.svg" alt="logo">
+            </div>
+            <section class="footer-tekst">
+                <h4 class="telefon">NYHEDSBREV</h4><br>
+                <ul>
+                    <li><p class="telefon">Tilmeld dig vores nyhedbrev<br>og få gode tilbud på vores<br> udvalg af dansk hvidvin</p></li><br>
+                    <li><input class="telefon" type="email" placeholder="Skriv din email her" class="email-input" required></li>    
+                </ul>
+            </section>
+            <section class="footer-tekst">
+                <h4>INFORMATION</h4><br>
+                <ul>
+                    <li><a href="#">Tlf. 60 51 05 12</a></li><br>
+                    <li><a href="#">Havblink@gmail.com</a></li><br>
+                    <li><a href="#">Fynsgade 69, 5881 Skårup</a></li>
+                </ul>
+            </section>
+            <section class="footer-tekst">
+                <h4>GÅRDBUTIK</h4><br>
+                <ul>
+                    <li><p>Åbningstider</p></li><br>
+                    <li><p>Alle hverdage<br>Kl. 11:00-17:00</p></li>    
+                </ul>
+            </section>
+        </div>
+        <div class="ikoner">
+            <div class="socialemedier">
+                <a href="https://www.facebook.com/login.php/"><img src="Billeder/facebook.svg" alt="facebook"></a>
+                <p>Facebook</p>
+            </div>
+             <div class="socialemedier">
+                <a href="https://www.findsmiley.dk/71055"><img src="Billeder/smiley.svg" alt="smiley"></a>
+                <p>Kontrolrapport</p>
+            </div>
+             <div class="socialemedier">
+                <a href="https://www.instagram.com/lindely.vingaard/"><img src="Billeder/insta.svg" alt="instagram"></a>
+                <p>Instagram</p>
+            </div>
+        </div>
+        <section class="rettigheder">
+            <p>© 2025 Havblink vingård ApS. Alle rettigheder forbeholdes. </p>
+        </section>
+    </footer>
+</body>
+</html>

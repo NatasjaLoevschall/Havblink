@@ -1,0 +1,154 @@
+/*banner billede i toppen*/
+.banner {
+  width: 100%; /* 100% af viewport-bredden */
+  height: 580px;
+  overflow: hidden;
+  margin-bottom: 60px;
+}
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* dækker hele banneret uden at strække billedet */
+}
+
+/*første række af bestseller produkter*/
+.produkt-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 300px); /* 3 kolonner á 300px */
+  justify-content: center;
+  gap: 6rem;
+  margin-bottom: 60px;
+}
+.produkt{
+  width: 300px;
+  height: 450px;
+  align-items: center;
+  text-align: center;
+  background-color: #ffffffba;
+}
+.produkt:hover {
+  transform: scale(1.02); /* forstørrer produktet ved hover */
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.produkt img {
+  width: 100%;
+  height: 75%;
+  object-fit: cover;
+}
+.hjerter {
+  margin-top: 0.6rem;
+  height: 20px;
+  width: 22px;
+  display: flex;
+  gap: 0.7rem;
+  margin-left: 10px;
+}
+.hjerter img {
+  height: 100%;
+  width: 100%;
+}
+.produktekst p {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  margin-top: 1rem;
+  color: #3C3C3C;
+}
+.produkt a{
+  text-decoration: none;
+}
+.produktekst {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+}
+.produktekst h4 {
+  margin-right: 10px;
+  margin-top: 1rem;
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #3C3C3C
+}
+/*vinsmagningskit*/
+#fiftyfifty {
+  margin-left: 5.4rem;
+  margin-right: 5.4rem;
+  height: 400px; /* fast højde */
+  background-color: #ffffffba;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center; /* centrerer indholdet vertikalt */
+}
+#indhold {
+  display: flex;
+  width: 100%;
+  gap: 2.5rem;
+}
+#produkt {
+  width: 45%;
+  height: 400px; 
+  overflow: hidden;
+}
+#produkt img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* bevarer proportioner og dækker hele boksen uden stræk */
+  transition: transform 0.3s ease;
+}
+#produkt img:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+}
+#tekst {
+  width: 55%;
+  height: 100%; /* tilpasser sig hele kassens højde */
+  margin-top: 30px;
+}
+.hjerter2 {
+  height: 20px;
+  width: 22px;
+  display: flex;
+  gap: 0.7rem;
+}
+.hjerter img {
+  height: 100%;
+  width: 100%;
+}
+#tekst h1 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  color: #3C3C3C
+} 
+#tekst p{
+  line-height: 1.5;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  color: #3C3C3C;
+  margin-bottom: 20px;
+}
+#tekst li{
+  line-height: 1.5;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  line-height: 2;;
+  color: #3C3C3C;
+}
+#tekst a{
+  text-decoration: none;
+  color: #3C3C3C;
+  font-weight: 400;
+  font-size: 1.1rem;
+  border: 1px solid #3C3C3C;
+  padding: 0.4rem 1rem;
+}
+#tekst a:hover{
+  background-color: #3C3C3C;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
