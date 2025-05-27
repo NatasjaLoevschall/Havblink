@@ -26,7 +26,11 @@
   position: relative;
   width: 100%;
   text-align: center;
-  color: #3C3C3C
+  color: #3C3C3C;
+  white-space: normal; /* vigtig: tillader linjeskift */
+  word-wrap: break-word; /* bryder ord ved behov */
+  padding-left: 400px;
+  padding-right: 400px;
 }
 .tekst h1{
   font-size: 2.5rem;
@@ -88,7 +92,11 @@
   position: relative;
   width: 100%;
   text-align: center;
-  color: #3C3C3C
+  color: #3C3C3C;
+  white-space: normal; /* vigtig: tillader linjeskift */
+  word-wrap: break-word; /* bryder ord ved behov */
+  padding-left: 400px;
+  padding-right: 400px;
 }
 .tekst2 h1{
   font-size: 2.5rem;
@@ -137,6 +145,10 @@
   @media (max-width: 768px){
 
   /*tekst stykke om ove og birgit*/
+.tekst{
+padding-left: 80px;
+padding-right: 80px;
+}
 .tekst h1{
   font-size: 1.8rem;
   margin-top: 30px;
@@ -161,6 +173,10 @@
   left: 10%;
 }
   /*tekst stykke om dansk vin med sjæl*/
+.tekst2{
+  padding-left: 80px;
+  padding-right: 80px;
+}
 .tekst2 h1{
   font-size: 1.8rem;
   margin-top: 30px;
@@ -182,4 +198,43 @@
   top: 13%;
 }
 
+  }
+
+/* Responsiv styling */
+  @media (max-width: 420px){
+.tekst{
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.tekst p{
+  font-size: 1.1rem;
+}
+/*illustrationer*/
+#birgit {
+  height: 100px;
+  top: 10%;
+  right: 9%;
+}
+#ove {
+  height: 93px;
+  top: 10%;
+  left: 7%;
+}
+.tekst2{
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.tekst2 p{
+  font-size: 1.1rem;
+}
+#hand1{
+  height: 90px;
+  top: 10%;
+  left: 3%;
+}
+#hand2{
+  height: 100px;
+  top: 10%;
+  right: 2%;
+}
   }

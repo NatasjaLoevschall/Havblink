@@ -188,8 +188,8 @@
   border-bottom: 1px solid  #3C3C3C; /* streg under teksten */
   border-top: 1px solid  #3C3C3C; /* streg over teksten */
   margin-bottom: 67px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top:10px;
+  padding-bottom: 10px;
   position: relative;
 }
  #tekst-containertelefon a{
@@ -314,5 +314,19 @@ input[type="checkbox"] {
 }
   }
 
+
+   /* Responsiv styling for mindre skærm*/
+  @media (max-width: 420px) {
+.banner {
+  height: 100vw;
+}
+.ned{
+  display: none; /* skjuler knappen på mindre skærme */
+}
+.produkt{
+  width: 300px;
+  height: 500px;
+}
+  }
 
 

@@ -559,3 +559,25 @@ header{
   object-fit: contain;
 }
   }
+
+
+   /* Responsiv styling for mindre skærm*/
+  @media (max-width: 420px) {
+/*logo størrelse og placering*/
+.footer-logo{
+  left: -18%;
+}
+.telefon{
+  text-align: center;
+  width: 210px;
+  margin-left: 1%;
+}
+.søg-felt {
+  width: 96px;
+}
+.søg-wrapper img{
+  height: 28px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+  }

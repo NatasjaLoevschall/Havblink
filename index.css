@@ -200,6 +200,11 @@
  /* Responsiv styling */
   @media (max-width: 768px) {
 /*hero section*/
+#hero{
+  width: 100%;
+  height: 100vh; /* Fylder hele skærmhøjden */
+  position: relative;
+}
 #hero img{
   width: 100%;
   top: 53%;
@@ -276,5 +281,52 @@
 
   }
 
+   /* Responsiv styling for mindre skærm*/
+  @media (max-width: 420px) {
+/*hero section*/
+main{
+  overflow-x: hidden;
+  margin: 0;
+}
+#hero{
+  height: 85vh; 
+}
+/*Næste sektion med hænderne*/
+.hands-container{
+  height: 90vh;
+}
+.hands-container h1{
+  font-size: 1.6rem;
+}
+.hands-container p{
+  font-size: 0.9rem;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+/* hænderne er position absolute, så de kan placeres præcist i forhold til baggrunden*/
+.hand1{
+  top: 74%;
+  left: 30%;
+}
+.hand2{
+  top: 70%;
+  left: 73%;
+}
+.hand3{
+  top:60%;
+}
+/*Vores vin sektion - gøres til flexboks så teksten står ved siden af hinanden horisontalt*/
+ .tekst-container a{
+  font-size: 0.5rem;
+}
+.tekst-container h4{
+  font-size: 1rem;
+}
+/*Produktbillederne*/
+.vin-container{
+  padding-left: 2.3rem;
+  padding-right: 2.3rem;
+}
+  }
 
 

@@ -222,3 +222,54 @@ font-size: 0.9rem;
 .fiftyfiftylaptop{
   display: none;
 }
+  }
+
+  /* Responsiv styling */
+  @media (max-width: 420px){
+.hands-container{
+  margin-bottom: -20px;
+  height: 80vh;
+}
+.hands-container h1{
+ font-size: 1.6rem;
+  margin-top: 100px;
+}
+.hands-container p{
+font-size: 1rem;
+padding-left: 20px;
+padding-right: 20px;
+}
+/* hænderne er position absolute, så de kan placeres præcist i forhold til baggrunden*/
+.hand1{
+  top: 70%;
+  left: 30%;
+}
+.hand2{
+  height: 140px;
+  top: 68%;
+  left: 75%;
+}
+.hand3{
+  top: 59%;
+}
+.produkt {
+  width: 80%;
+  height: 400px; 
+  margin-top: 50px;
+}
+.tekst {
+  width: 80%; 
+  margin-top: 20px;
+  margin-left: 0;
+}
+.tekst h1 {
+  font-size: 1.6rem;
+
+} 
+.tekst p, li{
+  font-size: 1rem;
+}
+.pris a{
+  font-size: 1.5rem;
+}
+  }
