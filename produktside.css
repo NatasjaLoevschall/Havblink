@@ -100,6 +100,9 @@ main {
   background-color: #B8B3AB 
 }
 /*knap*/
+#pristelefon{
+  display: none; /* skjuler knappen på desktop */
+}
 #pris{
     position: absolute;
     top: 80%;
@@ -214,3 +217,59 @@ main {
   color: #ffffff;
   transition: all 0.3s ease;
 }
+/* Responsiv styling */
+  @media (max-width: 768px){
+    /*fifty fifty med billede og tilhørende beskrivelse*/
+#fiftyfifty {
+  height: auto; /* gør højden automatisk for bedre responsivitet */
+  background-color: #F7F4EF;
+}
+/*gøres til flex-direction: columnds, så de står under hinanden på mobil*/
+#indhold {
+  display: flex;
+  flex-direction: column; /* kolonner på mobil */
+  align-items: center;     /* centrer alt horisontalt */
+  width: 100%;
+}
+#produkt {
+  width: 60%;
+  height: 400px; 
+  margin-top: 50px;
+}
+#tekst {
+  width: 60%;
+  margin-bottom: 170px;
+  position: relative;
+}
+#tekst h1 {
+  margin-top: -40px;
+} 
+#pris{
+    display: none;
+}
+#pristelefon{
+  display: block; /* viser knappen på mobil */
+  position: absolute;
+  top: 108%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#pristelefon h2{
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #3C3C3C;
+  margin-bottom: 18px;
+  text-align: center; /* centrerer teksten */
+}
+/*anmeldelser gøres til flex-direction: columns, så de står under hinanden på mobil*/
+.anmeldelser {
+  display: flex;
+  flex-direction: column; /* kolonner på mobil */
+}
+.anmeldelse:nth-child(2) {
+  border-top: 1px solid #3C3C3C;
+  border-bottom: 1px solid #3C3C3C;
+  border-left: none; /* fjerner venstre kant */
+  border-right: none; /* fjerner højre kant */
+}
+  }

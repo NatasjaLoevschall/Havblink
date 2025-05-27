@@ -141,9 +141,44 @@
     <main>
         <div class="banner">
             <img src="Billeder/skilt.jpg" alt="Banner">
+            <a href="#scroll-target">
+                <div class="ned">
+                    <img src="Billeder/ned.svg" alt="Ned pil">
+                </div>
+                <div id="scroll-target" class="sektion"></div>
+            </a>
         </div>
         <section class="tekst-container">
             <h4>Bestseller</h4>
+        </section>
+         <section id="tekst-containertelefon">
+            <h4>Vores vine</h4>
+            <div class="filter-wrapper">
+                <details class="filter-dropdown">
+                    <summary>Filtrer</summary>
+                    <div class="filter-options">
+
+                        <details class="sub-dropdown">
+                            <summary>Smag</summary>
+                            <div class="sub-options">
+                                <label><input type="checkbox"> Tør</label>
+                                <label><input type="checkbox"> Halvtør</label>
+                                <label><input type="checkbox"> Halvsød</label>
+                                <label><input type="checkbox"> Sød</label>
+                            </div>
+                        </details>
+
+                        <details class="sub-dropdown">
+                            <summary>Pris</summary>
+                            <div class="sub-options">
+                                <label><input type="checkbox"> Under 200 kr</label>
+                                <label><input type="checkbox"> 200–300 kr</label>
+                                <label><input type="checkbox"> Over 300 kr</label>
+                            </div>
+                        </details>
+                    </div>
+                </details>
+            </div>
         </section>
         <div class="produkt-grid">
             <div class="produkt">
@@ -187,6 +222,20 @@
                 <div class="produktekst">
                     <p>Mousserende vin<br>på solaris drue</p>
                     <h4>299,-</h4>
+                </div>
+            </div>
+            <div id="produkttelefon">
+                <img src="billeder/smagningskit.jpg" alt="Mousserende vin">
+                <div class="hjerter">
+                    <img src="Billeder/hjerte.svg" alt="Hjerter">
+                    <img src="Billeder/hjerte.svg" alt="Hjerter">
+                    <img src="Billeder/hjerte.svg" alt="Hjerter">
+                    <img src="Billeder/hjerte.svg" alt="Hjerter">
+                    <img src="Billeder/hjerte.svg" alt="Hjerter">
+                </div>
+                <div class="produktekst">
+                    <p>Smag vores<br>bestsellers</p>
+                    <h4>99,-</h4>
                 </div>
             </div>
         </div>

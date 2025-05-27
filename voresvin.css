@@ -2,16 +2,31 @@
 .banner {
   width: 100%; /* 100% af viewport-bredden */
   height: 580px;
+  margin-top: 20px;
   overflow: hidden;
   margin-bottom: 60px;
+  position: relative;
 }
 .banner img {
   width: 100%;
   height: 100%;
   object-fit: cover; /* dækker hele banneret uden at strække billedet */
 }
-
+.ned {
+  position: absolute;
+  top: 94%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 110px;
+  height: 110px;
+}
+#tekst-containertelefon{
+  display: none; /* skjuler tekst-container på større skærme */
+}
 /*første række af bestseller produkter*/
+#produkttelefon{
+  display: none; /* skjuler produkttelefon på større skærme */
+}
 .produkt-grid {
   display: grid;
   grid-template-columns: repeat(3, 300px); /* 3 kolonner á 300px */
@@ -152,3 +167,152 @@
   color: #ffffff;
   transition: all 0.3s ease;
 }
+
+ /* Responsiv styling */
+  @media (max-width: 768px){
+    /*banner billede i toppen*/
+.banner {
+  height: 560px;
+}
+.tekst-container{
+  display: none;
+}
+/*tekst flex, så filtreringsknap stå på linje med teksten*/
+#tekst-containertelefon{
+  display: block; /* viser tekst-container på mindre skærme */
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3rem; /* lidt luft fra siderne */
+  align-items: center; 
+  color:  #3C3C3C;
+  border-bottom: 1px solid  #3C3C3C; /* streg under teksten */
+  border-top: 1px solid  #3C3C3C; /* streg over teksten */
+  margin-bottom: 67px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+ #tekst-containertelefon a{
+  text-decoration: none;
+  color: #3C3C3C;
+  padding-bottom: 6px;
+  font-weight: 500;
+  border-bottom: 1.3px solid  #3C3C3C;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+#tekst-containertelefon a:hover{
+  font-weight: 500;
+  border-bottom: 1.5px solid #3C3C3C;
+}
+#tekst-containertelefon h4{
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+}
+/*filtreringsknap*/
+.filter-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
+}
+
+.filter-dropdown summary {
+  font-size: 0.9rem;
+  font-weight:400;
+  cursor: pointer;
+  list-style: none;
+  padding: 0.3rem 1rem;
+  border-radius: 3px;
+  background-color: #f9f6f1;
+  font-family: 'Barlow', sans-serif;
+}
+
+.filter-dropdown summary::after {
+  content: "▾";
+  right: 0.8rem;
+}
+/*styling af subdropdown*/
+.filter-options {
+  padding: 1rem;
+  border-top: 1px solid #3C3C3C;
+  border-bottom: #3C3C3C 1px solid;
+  background-color: #f9f6f1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  width: 100%;
+}
+.sub-dropdown summary {
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.sub-dropdown summary::after {
+  content: "▾";
+  position: absolute;
+  right: 0.5rem;
+}
+
+.sub-options {
+  padding-left: 3rem;
+  margin-bottom: 1rem;
+}
+
+.sub-options label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-size: 0.9rem;  
+}
+input[type="checkbox"] {
+  accent-color:#3C3C3C; /* sort */
+}
+
+#fiftyfifty {
+  display: none; /* skjuler vinsmagningskit på mindre skærme */
+}
+/*gør så billeder bliver vist vertikalt istedet for grid med 3 kolonner*/
+.produkt-grid {
+   display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    align-items: center;
+    justify-content: center;
+}
+.produkt{
+  width: 330px;
+  height: 400px;
+  align-items: center;
+  text-align: center;
+  background-color: #ffffffba;
+}
+/*fiftyfifty er fjernet og erstattet med et billede af vinsmagninssættet der matcher de andre billeder*/
+#produkttelefon{
+  display: block; /* viser produkttelefon på mindre skærme */
+  width: 330px;
+  height: 400px;
+  align-items: center;
+  text-align: center;
+  background-color: #ffffffba;
+}
+#produkttelefon:hover {
+  transform: scale(1.02); /* forstørrer produktet ved hover */
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+#produkttelefon img {
+  width: 100%;
+  height: 75%;
+  object-fit: cover;
+}
+  }
+
+
+

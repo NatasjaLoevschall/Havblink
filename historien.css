@@ -13,7 +13,7 @@
 }
 .ned {
   position: absolute;
-  top: 94%;
+  top: 92%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 110px;
@@ -132,3 +132,54 @@
   transform: translateY(-50%);
   right: 8%;
 }
+
+/* Responsiv styling */
+  @media (max-width: 768px){
+
+  /*tekst stykke om ove og birgit*/
+.tekst h1{
+  font-size: 1.8rem;
+  margin-top: 30px;
+}
+/* streg under teksten */
+.tekst h1::after {
+  width: 30px;   /* længden på stregen */
+ 
+}
+.tekst p{
+  font-size: 0.9rem;
+}
+/*illustrationer*/
+#birgit {
+  height: 120px;
+  top: 12%;
+  right: 10%;
+}
+#ove {
+  height: 110px;
+  top: 12%;
+  left: 10%;
+}
+  /*tekst stykke om dansk vin med sjæl*/
+.tekst2 h1{
+  font-size: 1.8rem;
+  margin-top: 30px;
+}
+/* streg under teksten */
+.tekst2 h1::after {
+  width: 30px;   /* længden på stregen */
+ 
+}
+.tekst2 p{
+  font-size: 0.9rem;
+}
+#hand1{
+  height: 110px;
+  top: 13%;
+}
+#hand2{
+  height: 130px;
+  top: 13%;
+}
+
+  }
