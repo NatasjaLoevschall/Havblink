@@ -75,6 +75,13 @@
 .fiftyfiftytelefon{
   display: none;
 }
+.fiftyfiftylaptop{
+  height: 500px; /* fast højde */
+  background-color: #ffffffba;
+  display: flex;
+  align-items: center; /* centrerer indholdet vertikalt */
+  margin-bottom: 80px;
+}
 .fiftyfifty {
   height: 500px; /* fast højde */
   background-color: #ffffffba;
@@ -111,7 +118,14 @@
   letter-spacing: 1.5px;
   color: #3C3C3C
 } 
-.tekst p, li{
+.tekst p{
+  font-size: 0.9rem;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  color: #3C3C3C;
+  margin-bottom: 27px;
+}
+.tekst li{
   font-size: 0.9rem;
   line-height: 1.5;
   letter-spacing: 1px;
