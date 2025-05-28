@@ -86,7 +86,7 @@ main {
 .egenskab p {
   letter-spacing: 6px;
   font-weight: 400;
-  font: size 15px;px;
+  font-size: 10px;
   margin-bottom: 0.2rem; /* ↓ Mindre afstand end standard */
   color: #B8B3AB  
 }
@@ -138,7 +138,6 @@ main {
   border-top: 1px solid  #3C3C3C; /* streg over teksten */
   padding-top: 20px;
   padding-bottom: 20px;
-  overflow-x: none;
   position: relative;
 }
 .tekst-container3    h4{
@@ -172,7 +171,7 @@ main {
 .anmeldelse {
   padding: 50px;
 }
-#dot{
+.dot{
     width: 55px;
     height: 55px;
 }
