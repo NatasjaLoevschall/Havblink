@@ -275,9 +275,7 @@ input[type="checkbox"] {
   accent-color:#3C3C3C; /* sort */
 }
 
-#fiftyfifty {
-  display: none; /* skjuler vinsmagningskit på mindre skærme */
-}
+
 /*gør så billeder bliver vist vertikalt istedet for grid med 3 kolonner*/
 .produkt-grid {
    display: flex;
@@ -292,6 +290,9 @@ input[type="checkbox"] {
   align-items: center;
   text-align: center;
   background-color: #ffffffba;
+}
+#fiftyfifty {
+  display: none; /* skjuler vinsmagningskit på mindre skærme */
 }
 /*fiftyfifty er fjernet og erstattet med et billede af vinsmagninssættet der matcher de andre billeder*/
 #produkttelefon{

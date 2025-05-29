@@ -32,16 +32,13 @@ main {
   letter-spacing: 1.5px;
 }
 /*fifty fifty med billede og tilhørende beskrivelse*/
-#fiftyfifty {
-  height: 500px; /* fast højde */
-  background-color: #ffffffba;
-  display: flex;
-  align-items: center; /* centrerer indholdet vertikalt */
-}
 #indhold {
   display: flex;
+  height: auto;
+  align-items: center; /* centrerer indholdet vertikalt */ 
   width: 100%;
   gap: 2.5rem;
+  background-color: #ffffffba;
 }
 #produkt {
   width: 45%;
@@ -79,6 +76,7 @@ main {
   margin-top: 30px;
   width: 150px;
   font-family: 'Barlow', sans-serif;
+  margin-bottom: 20px;
 }
 .egenskab {
   margin-bottom: 0.5rem;
@@ -105,7 +103,7 @@ main {
 }
 #pris{
     position: absolute;
-    top: 80%;
+    top: 78%;
     right: 15%;
 }
 #pris h2{
@@ -223,7 +221,7 @@ main {
   height: auto; /* gør højden automatisk for bedre responsivitet */
   background-color: #F7F4EF;
 }
-/*gøres til flex-direction: columnds, så de står under hinanden på mobil*/
+/*gøres til flex-direction: columns, så de står under hinanden på mobil*/
 #indhold {
   display: flex;
   flex-direction: column; /* kolonner på mobil */
