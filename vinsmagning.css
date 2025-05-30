@@ -1,10 +1,10 @@
 
 /*sektion med hænderne*/
 .hands-container{
-  margin-bottom: 20px;
+  margin-bottom: 100px;
   margin-top: 90px;
   position: relative;
-  height: 90vh;
+  height: auto;
   width: 100%;
   text-align: center;
   color: #3C3C3C
@@ -50,7 +50,7 @@
   left: 80%;
 }
 .hand3{
-  height: 400px;
+  height: 370px;
   position: absolute;
   top: 20%;
   left: 5%;
